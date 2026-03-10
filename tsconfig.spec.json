@@ -5,7 +5,11 @@
     "types": ["jest"],
     "module": "CommonJS",
     "moduleResolution": "node16",
-    "isolatedModules": true
+    "isolatedModules": true,
+    "paths": {
+      "@angular/core/testing":     ["./node_modules/@angular/core/types/testing.d.ts"],
+      "@angular/core/rxjs-interop": ["./node_modules/@angular/core/types/rxjs-interop.d.ts"]
+    }
   },
   "include": [
     "setup-jest.ts",
