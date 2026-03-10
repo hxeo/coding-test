@@ -5,6 +5,7 @@ const presetConfig = createCjsPreset();
 
 const config: Config = {
   ...presetConfig,
+  testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
   testMatch: ['<rootDir>/solutions/**/*.spec.ts', '<rootDir>/src/**/*.spec.ts'],
   moduleNameMapper: {
