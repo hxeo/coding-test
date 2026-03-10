@@ -9,6 +9,7 @@
   },
   "include": [
     "setup-jest.ts",
+    "src/**/*.ts",
     "solutions/**/*.ts",
     "solutions/**/*.d.ts"
   ]

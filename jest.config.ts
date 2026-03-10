@@ -6,7 +6,7 @@ const presetConfig = createCjsPreset();
 const config: Config = {
   ...presetConfig,
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
-  testMatch: ['<rootDir>/solutions/**/*.spec.ts'],
+  testMatch: ['<rootDir>/solutions/**/*.spec.ts', '<rootDir>/src/**/*.spec.ts'],
   moduleNameMapper: {
     // Maps the Module Federation remote path to the actual file so Jest can
     // resolve it without a running federation host.
